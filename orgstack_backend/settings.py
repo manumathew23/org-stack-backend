@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'djongo',
-    'core'
+    'core',
+    'questions'
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,14 @@ DATABASES = {
     },
     'nosql': {
         'ENGINE': 'djongo',
-        'NAME': 'orgstackdb'
+        'ENFORCE_SCHEMA': True,
+        'NAME': 'orgstackdb',
+        'HOST': 'localhost',
+        'PORT': 27017,
+        'USER': 'admin',
+        'PASSWORD': 'admin',
+        'AUTH_SOURCE': 'orgstackdb',
+        'AUTH_MECHANISM': 'SCRAM-SHA-1'
     }
 }
 
@@ -94,6 +102,7 @@ DATABASE_APPS_MAPPING = {
     'sessions': 'default',
     'messages': 'default',
     'core': 'default',
+    'questions': 'nosql'
 }
 
 # Password validation
@@ -131,3 +140,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
