@@ -5,11 +5,9 @@
 3. Install mongodb
 4. Install virtualenv
 5. Create new virtualenv and activate
-6. Clone the project and move it inside the virtualenv
-7. Inside the project directory, run command cd orgstack_backend
-7. Run command pip install -r requirements.txt
-8. Now you have all the required packages installed
-9. From the root directory of the project,  run command ./manage.py makemigrations (or python manage.py makemigrations)
-10. Run command ./manage.py migrate (or python manage.py migrate)
-11. To create the superuser for your django admin panel, run command ./manage.py createsuperuser (or python manage.py createsuperuser)
-12. To start the project, run command ./manage.py runserver (or python manage.py runserver)
+6. Go to project folder: __cd orgstack_backend__
+7. Install the requirements: __pip install -r requirements.txt__
+8. Create the intial migrations: From the root directory,  run __./manage.py makemigrations__ (or python manage.py makemigrations)
+9. Migrate the intial migrations __./manage.py migrate__ (or python manage.py migrate)
+10. To create the superuser for your django admin panel, run command ./manage.py createsuperuser (or python manage.py createsuperuser)
+11. To start the project, run command ./manage.py runserver (or python manage.py runserver)
