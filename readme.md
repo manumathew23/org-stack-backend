@@ -10,4 +10,4 @@
 8. Create the intial migrations: From the root directory,  run __./manage.py makemigrations__ (or python manage.py makemigrations)
 9. Migrate the intial migrations __./manage.py migrate__ (or python manage.py migrate)
 10. To create the superuser for your django admin panel, run command ./manage.py createsuperuser (or python manage.py createsuperuser)
-11. To start the project, run command ./manage.py runserver (or python manage.py runserver)
+11. To start the project, run command __./manage.py runserver__ (or python manage.py runserver). By default the server will be running at 127.0.0.1:8000
