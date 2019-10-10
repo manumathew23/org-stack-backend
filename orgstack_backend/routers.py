@@ -1,4 +1,4 @@
-from venv.orgstack_backend.orgstack_backend import settings
+from django.conf import settings
 
 
 class DatabaseAppsRouter(object):

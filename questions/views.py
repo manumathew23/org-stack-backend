@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework.views import APIView
+from .models import Questions
 
-# Create your views here.
+
+class QuestionsView(APIView):
+    def get(self):
+        questions = Questions.objects.all()
+        return questions

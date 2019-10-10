@@ -95,6 +95,8 @@ DATABASES = {
     }
 }
 
+DATABASE_ROUTERS = ['orgstack_backend.routers.DatabaseAppsRouter']
+
 DATABASE_APPS_MAPPING = {
     'contenttypes': 'default',
     'auth': 'default',
