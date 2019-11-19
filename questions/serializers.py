@@ -1,7 +1,9 @@
 from rest_framework import serializers
 
+from .models import Questions
 
-class QuestionsSerializer(serializers.Serializer):
-    name = serializers.CharField()
-    tagline = serializers.CharField(max_length=200)
-    description = serializers.CharField()
+
+class QuestionsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Questions
+        exclude = ('id',)
