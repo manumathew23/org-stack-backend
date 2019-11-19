@@ -1,7 +1,7 @@
-from django.db import models
+from djongo import models
 
 
 class Questions(models.Model):
-    name = models.CharField(max_length=100)
-    tagline = models.TextField()
+    name = models.TextField()
+    tagline = models.CharField(max_length=200)
     description = models.TextField()
